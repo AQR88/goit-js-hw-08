@@ -26,7 +26,7 @@ function submitHandle(evt) {
   evt.preventDefault();
   console.log({ email: email.value, message: message.value });
   if (email.value === '' || message.value === '') {
-    return alert('Необхідно заповнити всі поля');
+    return alert('Необхідно заповнити всі поля!');
   }
 
   localStorage.removeItem(localStorageKey);
